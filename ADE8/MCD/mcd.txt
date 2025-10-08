@@ -1,0 +1,25 @@
+;Calcolare il M.C.D. tra A e B utilizzando l’algoritmo di Euclide. Il risultato si troverà in B.
+Inizio:     LD      A
+            CMPv    0
+            JE      Fine
+            JLs     Fine
+            CMP     B
+            JLu     Scambia
+Prosegui:   SUB     B
+            ST      A
+            JMP     Inizio
+Scambia:    ST      C
+            LD      B
+            ST      A
+            LD      C
+            ST      B
+            LD      A
+            JMP     Prosegui
+Fine:       JMP     Fine
+A: 6
+B: 15
+C: 00
+;L'algoritmo di Euclide mi dice che per fare l'mcd tra due numeri devo togliere il più piccolo al più grande ripetutamente finchè
+;uno dei due non sarà zero e l'altro sarà il risultato, funziona ovviamente solo per numeri che hanno mcd
+;quello che faccio in questo codice è se necessario spostare i numeri in modo da avere poi un operazione in cui tolgo il più piccolo al più grande
+;e continuo a ciclare finchè non ottengo uno zero, allora ho il risultato (IN B)
