@@ -1,0 +1,11 @@
+;Controllare se A è positivo. Se sì B deve valere 1, altrimenti 0.
+            LD      A
+            CMPv    0
+            JE      Fine        ;se A è minore o uguale a zero lascio B a zero, altrimenti gli aggiungo 1
+            JLs     Fine
+            LD      B
+            ADDv    1
+            ST      B
+Fine:       JMP     Fine
+A:  15
+B:  0
