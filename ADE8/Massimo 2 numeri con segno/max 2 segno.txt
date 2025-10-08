@@ -1,0 +1,11 @@
+            LD      A
+            CMP     B
+            JLs     Diverso        ;Nel caso in cui A sia Minore di B andrò nella sezione "Diverso" per mettere B in C, altrimenti proseguirò e metterò A in C, in entrambi i casi devo poi finire sul loop "Fine"
+            ST      C
+            JMP     Fine
+Diverso:    LD      B
+            ST      C
+Fine:       JMP     Fine            ;Loop finale che separa le istruzioni dalle variabili e blocca il nostro programma in modo che non si ripeta all'infinito
+A: 15                               ;Sentitevi liberi di modificare A e B, consiglio di provare almeno i casi in cui A>B e in cui B>A
+B: 3
+C: 0
