@@ -1,0 +1,14 @@
+;Controllare se A è pari. Se sì B deve valere 1, altrimenti 0.
+Ciclo:      LD      A
+            CMPv    0
+            JE      Pari
+            JLs     Fine
+            SUBv    2
+            ST      A 
+            JMP     Ciclo   ;il mio ragionamento è quello di togliere ogni volta 2 al numero, se arrivo ad avere zero allora il numero
+Pari:       LD      B       ;era pari, altrimenti se vado sotto zero (-1) il numero era dispari, controllo ogni volta se ho zero o negativo e
+            ADDv    1       ;in caso contrario continuo a sottrarre due e ripeto il ciclo
+            ST      B
+Fine:       JMP     Fine
+A:          5               ;provate una volta anche con un A pari, zero viene contato come pari e suppongo sia giusto così
+B:          0

@@ -1,3 +1,4 @@
+;Calcolare il massimo tra A e B (interi a 8 bit con segno) e mettere il risultato in C. 
             LD      A
             CMP     B
             JLs     Diverso        ;Nel caso in cui A sia Minore di B andrò nella sezione "Diverso" per mettere B in C, altrimenti proseguirò e metterò A in C, in entrambi i casi devo poi finire sul loop "Fine"
