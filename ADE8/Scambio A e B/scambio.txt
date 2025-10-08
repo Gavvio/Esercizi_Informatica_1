@@ -1,0 +1,13 @@
+;Scambiare due byte A e B.
+            LD      A
+            ST      C 
+            LD      B 
+            ST      A 
+            LD      C
+            ST      B 
+            LDv     0           ;questo non è assolutamente necessario ma mi piaceva rimettere C a zero
+            ST      C 
+Fine:       JMP     Fine
+A: 8
+B: 6
+C: 0
