@@ -1,0 +1,25 @@
+;Scrivere e testare con il simulatore un programma utilizzando l’assembly del processore ADE8 che
+;dato un vettore di N valori a 8 bit interi con segno memorizzati a partire dall’indirizzo A, ne calcoli
+;il massimo e lo metta in una variabile C. Anche N è una variabile a 8 bit intera unsigned.
+            LDv     X
+            ST      P      ;assegno al puntatore P il numero della prima cella del vettore X
+Ciclo:      LDi     P
+            CMPv    C 
+            JLs     Prosegui   ;se il valore puntato da p è maggiore del valore che ho in c allora sostituisco c, 
+            ST      C          ;altrimenti mando avanti il puntatore e basta
+
+Prosegui:   LD      P 
+            ADDv    1
+            ST      P 
+
+            LD      N 
+            SUBv    1
+            ST      N 
+
+            JZ      Fine        ;ricordatevi questo jz con i puntatori che mi ferma il ciclo quando ho finito di scorrere tutta la dimensione n
+            JMP     Ciclo       ;del mio array
+Fine:       JMP     Fine
+P: 0
+N: 5
+X: 11 -40 7 38 6
+C: 0

@@ -1,0 +1,7 @@
+;Scrivere e testare con il simulatore un programma utilizzando l’assembly del processore ADE8 che,
+;data una variabile A a 8 bit, ne visualizzi il contenuto in esadecimale sul doppio display a 7
+;segmenti (periferica alla porta 0).
+            LD      A 
+            ST      0d0h        ;Banalmente carico il valore di A e lo metto sulla porta zero (ossia in d0h, ci metto uno zero davanti per evitare
+Fine:       JMP     Fine        ;che l'assemblatore scambi il numero esadecimale della cella per un etichetta)
+A: 15

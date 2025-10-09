@@ -7,5 +7,5 @@
             ADDv    1
             ST      B
 Fine:       JMP     Fine
-A:  15
+A:  -15
 B:  0

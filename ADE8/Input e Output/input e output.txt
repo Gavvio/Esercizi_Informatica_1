@@ -1,0 +1,11 @@
+;Scrivere e testare con il simulatore un programma utilizzando l’assembly del processore ADE8 che,
+;senza mai fermarsi, legga il valore fornito in input con gli 8 interruttori (periferica alla porta 2) e lo
+;invii al doppio display a 7 segmenti (periferica alla porta 0) e al display a caratteri (periferica alla
+;porta 1). Nota: questo programma necessita di un ciclo infinito: invece che saltare a Fine, basta
+;saltare a Inizio o direttamente all’indirizzo 0
+Ciclo:      LD      0d2h
+            ST      0d0h
+            ST      0d1h
+            JMP     Ciclo
+;Faccio quanto chiesto, non serve il jmp fine perchè voglio che le istruzioni si ripetano sempre e tutto ciò che ho scritto è di prendere
+;il valore alla porta 2 di metterlo nelle porte 0 e 1
