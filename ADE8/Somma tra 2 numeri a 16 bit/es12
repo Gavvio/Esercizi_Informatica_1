@@ -1,0 +1,34 @@
+; Scrivere e testare con il simulatore un programma utilizzando l’assembly del processore ADE8 che
+; date due variabili A e B a 16 bit intere unsigned memorizzate in little endian ne calcoli la somma
+; mettendo nuovamente il risultato in A e in D il valore 1 se si verifica un riporto, 0 altrimenti.
+
+ld a0
+add b0
+st a0
+jc riporto1
+
+operazione2:    ld a1
+                add b1
+                st a1
+                jc riporto2
+                jmp fine
+
+
+riporto1:       ld a1
+                addv 1
+                st a1
+                jmp operazione2
+
+riporto2:       ld d
+                addv 1
+                st d
+
+fine:           jmp fine
+
+
+
+a0: 45
+a1: 150
+b0: 60
+b1: 135
+d: 0
