@@ -1,0 +1,31 @@
+; Scrivere e testare con il simulatore un programma utilizzando l’assembly del processore ADE8 che
+; data una variabile a 16 bit intera unsigned memorizzata in little endian a partire dall’indirizzo A
+; (potete chiamare i due byte A0 e A1), vi sommi una variabile B a 8 bit intera unsigned mettendo il
+; risultato in una variabile C a 16 bit (potete chiamare i due byte C0 e C1) e che metta in D il valore 1
+; se si verifica un riporto sul bit più significativo (a 16 bit), 0 altrimenti.
+
+ld A0
+add B
+st C0
+jc Riporto
+ld A1
+st C1
+
+Fine: jmp Fine
+
+Riporto:	ld A1
+		addv 1
+		st C1
+		ld D
+		addv 1
+		st D
+		jmp Fine
+
+
+
+A0: 140
+A1: 70
+B: 130
+C0: 0
+C1: 0
+D: 0
