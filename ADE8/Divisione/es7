@@ -1,0 +1,26 @@
+; Scrivere e testare con il simulatore un programma utilizzando l’assembly del processore ADE8 che
+; date due variabili A e B a 8 bit intere unsigned effettui la divisione intera e ne calcoli il quoziente Q
+; e il resto R (entrambi a 8 bit). Nota: riflettere sul significato di “quante volte B sta in A?”.
+
+jmp Ciclo
+
+Ciclo:	ld A
+	sub B
+	jlu Resto
+	st A
+	ld Q
+	addv 1
+	st Q
+	jmp Ciclo
+
+Fine: 	jmp Fine
+
+Resto: 	ld A
+	st R
+	jmp Fine
+	
+
+A: 52
+B: 7
+Q: 0
+R: 0
