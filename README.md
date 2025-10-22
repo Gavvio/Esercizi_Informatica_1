@@ -1,3 +1,6 @@
+<p align="center">
+  <img src="https://github.com/Gavvio/Esercizi_Informatica_1/blob/main/risorse/ascii-art-text-ade8.png" alt="ADE8"/>
+</p>
 #  Esercizi risolti e commentati di Informatica 1, ADE8 e C
 
 Passaggi per riuscire da soli a scrivervi, assemblarvi e testare un esercizio in ADE8:
@@ -12,5 +15,19 @@ Passaggi per riuscire da soli a scrivervi, assemblarvi e testare un esercizio in
   - non vi resta che aprire il file "logisim-win-2.7.1.exe" (o simile), una volta dentro selezionare: file, open e aprire il file (che dovreste aver messo nella prima cartella) "ADE8v1.1.circ"
   - l'ultimo passaggio è caricare il file generato dentro alla memoria (tasto destro sulla memoria, load image e aprite il file "logisim" generato prima, a questo punto basta andare su simulate e scegliere se si vuole la tick frequency (cambia la velocità a cui verrà eseguito il programma) oppure selezionare ticks enabled e premere su "run", controllare se il risultato ottenuto è quello che ci si aspettava
   - ultime note che lascio sono che: un buon modo per scoprire gli errori nel codice è quello di "debuggare" ossia in questo caso far eseguire il codice a velocità piuttosto bassa e vedere se passo passo succede qualche cosa che non torna, infine spiego solo che l'idea di creare una cartella per ogni file è dovuta al fatto che il file generato dall'assemblatore ha sempre lo stesso nome (logisim.txt), mettendolo in cartelle diverse non ci si confonde
+  - 
 
 ## Potreste trovare dei commenti all'interno dei file di testo scritti in Assembly, sono contrassegnati da un ";" prima del commento e non impattano in alcun modo sul codice ma possono aiutarvi a capire meglio
+<p align="center">
+  <img src="https://github.com/Gavvio/Esercizi_Informatica_1/blob/main/risorse/ascii-art-text-c.png" alt="ADE8"/>
+</p>
+Passaggi per riuscire a scrivere, debuggare e infine caricare su olj gli esercizi in C:
+
+  - scaricate Visual Studio (non visual studio code) e assicuratevi di scaricare anche il pacchetto per c++
+  - all'apertura fate "crea un nuovo progetto" e selezionate "progetto vuoto in c++"
+  - una volta aperto siete già pronti a procedere, tasto destro su esplora soluzioni/ file di origine o file di risorse come preferite, aggiungi, nuovo elemento
+  - mi raccomando di chiamare il file col nome che volete (o più probabilmente col nome richiesto dall'esercizio) ma ricordatevi di mettere il formato ".c" togliendo il ".cpp" che viene proposto di default
+  - consiglio di non fare un progetto nuovo ogni volta ma creare diversi file in un unico progetto ricordandosi di commentare il "main" di ogni singolo file quando si passa al prossimo (il commento multilinea inizia con /* e finisce con */)
+  - su olj ora non vi resta che caricare il vostro file (dopo aver cancellato o commentato il main) e compilare per testare i vari risultati ottenuti
+  
+  
