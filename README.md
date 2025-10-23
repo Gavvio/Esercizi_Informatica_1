@@ -1,5 +1,7 @@
 <p align="center">
+  <kbd>
   <img src="https://github.com/Gavvio/Esercizi_Informatica_1/blob/main/risorse/ascii-art-text-ade8.png" alt="ADE8"/>
+  </kbd>
 </p>
 #  Esercizi risolti e commentati di Informatica 1, ADE8 e C
 
@@ -19,7 +21,9 @@ Passaggi per riuscire da soli a scrivervi, assemblarvi e testare un esercizio in
 
 ## Potreste trovare dei commenti all'interno dei file di testo scritti in Assembly, sono contrassegnati da un ";" prima del commento e non impattano in alcun modo sul codice ma possono aiutarvi a capire meglio
 <p align="center">
+  <kbd>
   <img src="https://github.com/Gavvio/Esercizi_Informatica_1/blob/main/risorse/ascii-art-text-c.png" alt="ADE8"/>
+  </kbd>
 </p>
 Passaggi per riuscire a scrivere, debuggare e infine caricare su olj gli esercizi in C:
 
