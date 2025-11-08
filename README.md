@@ -3,9 +3,10 @@
   <img src="https://github.com/Gavvio/Esercizi_Informatica_1/blob/main/risorse/ascii-art-text-ade8.png" alt="ADE8"/>
   </kbd>
 </p>
-#  Esercizi risolti e commentati di Informatica 1, ADE8 e C
 
-Passaggi per riuscire da soli a scrivervi, assemblarvi e testare un esercizio in ADE8:
+# Esercizi risolti e commentati di Informatica 1, ADE8 e C
+
+### Passaggi per riuscire da soli a scrivervi, assemblarvi e testare un esercizio in ADE8:
   - scaricate dalla pagina moodle di informatica i 3 file ai link: "emulator.zip", "Assemblatore per il processore di ADE8" (ovviamente scegliete il link in base al vostro sistema operativo), "logisim-generic-2.7.1.jar"
   - scompattate il file emulator.zip (per i meno pratici tasto destro sul file, estrai, scegliere il percorso di destinazione) in modo da avere accesso ai file contenuti al suo interno
   - a questo punto dovreste avere a disposizione i file: "a8a.exe", "ADE8v1.1.circ" e "logisim-win-2.7.1.exe" (o simile), consiglio di creare una cartella e raggrupparli perchè andranno usati ogni volta che si farà un esercizio con ADE8
@@ -25,7 +26,8 @@ Passaggi per riuscire da soli a scrivervi, assemblarvi e testare un esercizio in
   <img src="https://github.com/Gavvio/Esercizi_Informatica_1/blob/main/risorse/ascii-art-text-c.png" alt="ADE8"/>
   </kbd>
 </p>
-Passaggi per riuscire a scrivere, debuggare e infine caricare su olj gli esercizi in C:
+
+### Passaggi per riuscire a scrivere, debuggare e infine caricare su olj gli esercizi in C:
 
   - scaricate Visual Studio (non visual studio code) e assicuratevi di scaricare anche il pacchetto per c++
   - all'apertura fate "crea un nuovo progetto" e selezionate "progetto vuoto in c++"
